@@ -2,7 +2,7 @@ import "./styles.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
-import Form from "./components/home/Form";
+import Home from "./components/home/Home";
 export default function App() {
   return (
     <div>
@@ -10,7 +10,7 @@ export default function App() {
         <Navbar />
 
         <Switch>
-          <Form />
+          <Route exact path="/" component={Home} />
         </Switch>
         <Footer />
       </Router>
