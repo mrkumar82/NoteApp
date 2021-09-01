@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { useFirestoreConnect } from "react-redux-firebase";
-import FavoriteList from "./FavoriteList";
+import NotesList from "./NotesList";
 
 function Favorite() {
   useFirestoreConnect([
@@ -15,11 +15,9 @@ function Favorite() {
 
   const favnotes = useSelector((state) => state.firestore.ordered.favnotes);
 
-  console.log("tests", favnotes);
-
   return (
     <div>
-      <FavoriteList favnotes={favnotes} />
+      <NotesList notes={favnotes} />
     </div>
   );
 }
