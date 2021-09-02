@@ -9,11 +9,12 @@ function Navbar() {
         </a>
         <ul id="nav-mobile" className="right hide-on-med-and-down">
           <li>
-            <Link to="/favorites">Favorites</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/">Components</Link>
+            <Link to="/favorites">Favorites</Link>
           </li>
+
           <li>
             <Link to="/">JavaScript</Link>
           </li>
