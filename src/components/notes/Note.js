@@ -14,6 +14,9 @@ function Note({ note }) {
   const updateFavorite = () => {
     dispatch(favoriteNote(note));
   };
+  const editNoteHandler = () => {
+    dispatch({ type: "EDIT_NOTE", payload: note });
+  };
 
   return (
     <div className="note card-panel left-align">
@@ -40,9 +43,15 @@ function Note({ note }) {
         <p>Read More </p>
       </Link>
       <div className="right-align">
-        <i className="material-icons " style={{ cursor: "pointer" }}>
-          edit
-        </i>
+        <Link to={`/edit/${note.id}`}>
+          <i
+            onClick={editNoteHandler}
+            className="material-icons "
+            style={{ cursor: "pointer" }}
+          >
+            edit
+          </i>
+        </Link>
       </div>
     </div>
   );
