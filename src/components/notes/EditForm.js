@@ -38,7 +38,9 @@ function EditForm() {
               value={note.content}
               {...bindContent}
             ></textarea>
-            <label htmlFor="textarea1">Content</label>
+            <label className="active" htmlFor="textarea1">
+              Content
+            </label>
           </div>
           <div className="input-field col s12 left-align">
             <button
@@ -46,7 +48,7 @@ function EditForm() {
               type="submit"
               name="action"
             >
-              Submit
+              Update
               <i className="material-icons right">send</i>
             </button>
           </div>
