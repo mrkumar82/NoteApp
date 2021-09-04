@@ -1,7 +1,7 @@
 {
-  "name": "evernote-clone",
+  "name": "evernote",
   "version": "1.0.0",
-  "description": "",
+  "description": "evernote app",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
